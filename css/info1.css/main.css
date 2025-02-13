@@ -74,13 +74,13 @@ body {
 body.rtl h1,
 body.rtl h2,
 body.rtl h3 {
-  font-family: 'IRANSansWeb', sans-serif;
+  font-family: 'IRANSansWeb', sans-serif !important;
   font-weight: 1000 !important; 
 }
 
 
 html[lang="fa"] p {
-  font-family: 'IRANSansWeb', sans-serif;
+  font-family: 'IRANSansWeb', sans-serif !important;
   font-weight: 100 !important;
 }
 
