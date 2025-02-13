@@ -5,13 +5,13 @@
    .about-container-content p,
    .services-wrapper p,
    .contact-container p {
-        font-weight: 600 !important;
+        font-weight: 500 !important;
     }
    body.rtl .info-container p:nth-last-of-type(1),
    body.rtl .about-container-content p,
    body.rtl .services-wrapper p,
    body.rtl .contact-container p {
-        font-weight: 600 !important;
+        font-weight: 500 !important;
     }
 
     .about-container h2,
