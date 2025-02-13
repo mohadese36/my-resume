@@ -1,9 +1,16 @@
 
 @media (max-width: 992px) {
 
-    .info-container p:nth-last-of-type(1),
-    .about-container-content p,
-    .services-wrapper p {
+   .info-container p:nth-last-of-type(1),
+   .about-container-content p,
+   .services-wrapper p,
+   .contact-container p {
+        font-weight: 600 !important;
+    }
+   body.rtl .info-container p:nth-last-of-type(1),
+   body.rtl .about-container-content p,
+   body.rtl .services-wrapper p,
+   body.rtl .contact-container p {
         font-weight: 600 !important;
     }
 
@@ -175,7 +182,7 @@
     }
     
     .contact-container p {
-        font-size: clamp(0.75rem, 1vw + 0.5rem, 0.875rem);
+      
         margin-bottom: 0.5rem;
     }
 
