@@ -1,0 +1,94 @@
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.contact-container h2 {
+    color:  var(--color-powder-blue);
+    margin: 0px 0px 0.75rem;
+    font-weight: 600;
+    font-size: clamp(1.7rem, 4vw, 4rem);
+    line-height: 1.1;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase !important;
+}
+
+.contact-container p {
+    font-size: clamp(0.875rem, 1vw + 0.5rem, 1rem);
+    color: var(--color-steel-gray);
+    line-height: 1.7;
+    text-align: center;
+}
+
+.contact-container a {
+    margin-top: 4rem;
+    border: 1px solid  var(--color-soft-lavender)a;
+    padding: 1rem 3rem;
+    color:  var(--color-soft-lavender);
+    border-radius: 10px;
+    box-shadow: 0 30px 50px -20px var(--color-midnight-purple);
+    box-shadow: 0 6px 7px  var(--color-midnight-purple);
+    width: max-content;
+    align-self: center;
+}
+
+.contact-container a:hover {
+    background-color: var(--color-soft-lavender);
+    color: var(--color-deep-ocean);
+}
+
+/* social-icons */
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif ;
+    position: fixed;
+    bottom: 0;
+}
+  
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--color-frosted-glass);
+}
+
+.social-icon:hover {
+    color:  var(--color-soft-lavender);
+}
+  
+.social-icons::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    color: var(--color-frosted-glass);
+    background: var(--color-frosted-glass);
+    top: -100px;
+}
+
+.social-icons::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    background:var(--color-frosted-glass);
+    bottom: -100px;
+}
+  
+body.rtl .social-icons {
+    left: auto;
+    right: 55px !important; 
+    direction: rtl;
+}
+
