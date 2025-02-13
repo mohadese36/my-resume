@@ -307,7 +307,7 @@
 @media (min-width: 993px) {
 
     main {
-        padding:0 12%; 
+        padding: 0 12% !important; 
     }
 
     .social-icons {
