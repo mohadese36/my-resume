@@ -1,0 +1,134 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import 'experience.css';
+@import 'footer.css';
+@import 'header.css';
+@import 'main-content.css';
+@import 'projects.css';
+@import 'sidbar.css';
+@import 'break.css';
+
+
+@font-face {
+  font-family: 'IRANSansWeb';
+  src: url('/fonts/IRANSansWeb.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'IRANSansWeb';
+  src: url('/fonts/IRANSansWeb_Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IRANSansWeb';
+  src: url('/fonts/IRANSansWeb_Light.ttf') format('truetype');
+  font-weight: lighter;
+}
+
+
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-soft-lavender: #c5a3ff;
+  --color-powder-blue: #89a4c7;
+  --color-smoky-overlay: rgba(0, 0, 0, 0.5);
+  --color-steel-gray: #8f99a3;
+  --color-pale-sky: #e3eaf3;
+  --color-deep-ocean: #0b0f19;
+  --color-spring-teal: #1c7c7c;
+  --color-neon-blue: #2e5aac;
+  --color-frosted-glass: #f0f4f8;
+  --color-absolute-white: #ffffff;
+  --color-graphite: #1e1e1e;
+  --color-frosted-glass-transparent: rgba(240, 244, 248, 0.3);
+  --color-midnight-purple: #3b1f58;
+  --color-royal-plum: rgba(65, 54, 95, 0.2);
+  --color-dusty-blue: #6b7a90;
+  --color-charcoal-gray: #333a42;
+  --color-deep-ocean-transparent: rgba(11, 15, 25, 0.8);
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+html[lang="fa"] {
+  font-family: 'IRANSansWeb',sans-serif;
+}
+
+
+html[lang="en"] {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+html[lang="fa"] h1,
+html[lang="fa"] h2,
+html[lang="fa"] h3 {
+  font-family: 'IRANSansWeb', sans-serif;
+  font-weight: 1000 !important;
+}
+
+html[lang="fa"] p {
+  font-family: 'IRANSansWeb', sans-serif;
+  font-weight: 100 !important; 
+}
+
+
+body.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+body.ltr {
+  direction: ltr;
+  text-align: left;
+}
+
+
+a {
+  color: rgb(226, 232, 240);
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.7s;
+}
+
+a:hover {
+  color: var(--color-soft-lavender) !important;
+}
+
+/* افکت موس */
+.trail {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+  pointer-events: none;
+  opacity: 1;
+  z-index: 1000;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+body {
+  background-color: var(--color-deep-ocean);
+  display: grid;
+  place-items: center;
+  margin: 0;
+}
+
+
+
+  

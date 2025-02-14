@@ -1,0 +1,142 @@
+
+/* سایدبار */
+.sidebar {
+  background-color: var(--color-deep-ocean);
+  padding: 90px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 100vh;
+  gap: 80px;
+  position: fixed;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar h1 {
+  color: var(--color-powder-blue);
+  font-size: clamp(2rem, 6vw, 3rem);
+  margin: 0;
+}
+
+.sidebar h2 {
+  color: var(--color-steel-gray);
+  font-size: clamp(1.3rem, 4vw, 1.75rem);
+  margin: 0;
+  margin-top: 0.75rem;
+  text-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar p {
+  color: var(--color-steel-gray);
+  margin: 0;
+  margin-top: 1.2rem;
+  line-height: 1.5;
+  font-size: clamp(0.75rem, 3vw, 1rem);
+  font-weight: 500;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+  
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-link span  {
+  width: 3vw; 
+  height: 1px; 
+  background-color: var(--color-dusty-blue) !important; 
+  margin-right: 0.5rem;
+  transform: translateY(-50%);
+  transition: all 0.7s;
+}
+
+.sidebar nav {
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.sidebar nav a {
+  color: var( --color-dusty-blue);
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  font-weight: bold;
+  color: var(--color-frosted-glass);
+}
+
+.nav-link:hover span,
+.nav-link.active span {
+  background-color: var(--color-frosted-glass) !important;
+}
+
+.nav-link:hover:not(.active),
+.nav-link.active {
+  transform: translateX(10px);
+}
+
+.nav-link:hover:not(.active) span,
+.nav-link.active span {
+  width: 5vw;
+  background-color:  var(--color-soft-lavender) !important;
+
+}
+
+.nav-link:hover:not(.active) ,
+.nav-link.active {
+  color:  var(--color-soft-lavender) !important;
+}
+
+body.rtl strong {
+  font-weight: bold;
+
+}
+
+body.rtl .nav-link span {
+  margin-left: 0.5rem; 
+  transform: translateY(-50%) translateX(0);
+}
+
+body.rtl .nav-link:hover span,
+body.rtl .nav-link.active span {
+  background-color: var(--color-frosted-glass) !important;
+}
+
+body.rtl .nav-link:hover:not(.active),
+body.rtl .nav-link.active {
+  transform: translateX(-10px); /* معکوس کردن translateX برای rtl */
+}
+
+body.rtl .nav-link:hover:not(.active) span,
+body.rtl .nav-link.active span {
+  width: 5vw;
+  background-color: var(--color-soft-lavender) !important;
+}
+
+/*  */
+.social-icons {
+  display: flex;
+  gap: 5px;
+  margin-top: 4rem;
+}
+
+.social-icons a {
+  color: var(--color-dusty-blue);
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-right: 1.25rem;
+  transition: color 0.3s ease;
+}

@@ -1,0 +1,144 @@
+
+/* experienc */
+.experience-section,
+.projects-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.experience-card {
+  display: grid;
+  grid-template-rows: repeat(2,auto);
+  gap: 5px;
+
+}
+
+#about-heading,
+#experience-title,
+#projects-title,
+.experience-card,
+.project-box {
+  padding: 1.5rem 2rem;
+  border-radius: 25px;
+  box-shadow: none;
+  transition: background-color 0.7s ease, box-shadow 0.7s ease;
+
+}
+
+.experience-card:hover,
+.project-box:hover {
+  background-color: var(--color-royal-plum);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.touch-hover {
+  background-color: var(--color-royal-plum);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.experience-card h3 {
+  color: var(--color-powder-blue);
+  margin: 0 0 0.5rem 0!important;
+}
+
+.experience-card-title .text-slate{
+  margin: 0 !important;
+  color: var(--color-dusty-blue) !important;
+  font-size: 0.75rem;
+  transition: all 0.7s;
+}
+
+.experience-card p {
+  margin: 0.5rem 0;
+  color: var(--color-steel-gray);
+}
+
+.experience-card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.text-slate {
+  font-size: 1rem;
+  color: var(--color-charcoal-gray);
+  margin: 0;
+}
+
+.icon-link {
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+.view-resume {
+  margin-top: 20px;
+  text-align: left;
+}
+
+body.rtl .view-resume {
+
+  text-align: right;
+}
+
+.resume-link {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--color-frosted-glass);
+  margin-left: 2.5rem;
+  transition: all 0.7s;
+}
+
+body.rtl .resume-link {
+  margin-left: 0;
+  margin-right: 2.5rem;
+}
+
+.arrow {
+  font-size: 1.1rem;
+  margin: 0 0.25rem;
+  display: inline-block;
+  transition: all 0.7s;
+}
+
+.experience-card:hover .arrow,
+.project-box:hover .arrow{
+  color: var(--color-soft-lavender);
+  transform: translate(15%,-15%);
+}
+
+body.rtl .experience-card:hover .arrow,
+body.rtl .project-box:hover .arrow {
+  transform: translate(-15%, -15%) !important;
+}
+
+.skills {
+  list-style: none;
+  padding: 0;
+  margin: 0.7rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skills li,
+.project-stats ul li {
+  color:  var(--color-graphite);
+  background-color: var(--color-spring-teal); 
+  padding: 0.6rem 1rem;
+  border-radius: 7px;
+  font-size: 0.675rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: background-color 0.7s ease, color 0.7s ease;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+/* footer */
+
+footer p{
+  color: var(--color-frosted-glass);
+}
+
+footer a {
+  font-size: 0.8rem;
+  opacity: 0.3;
+  font-weight: 800;
+  color: var(--color-spring-teal) !important;
+  opacity: 1;
+}
+
+footer a:hover {
+
+  opacity: 0.9;
+}
+

@@ -1,0 +1,67 @@
+ /* header */
+
+ 
+ .header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-deep-ocean);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: 5rem;
+}
+
+body.rtl .navbar {
+  margin-left: 0;
+  margin-right: 5rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--color-dusty-blue);
+  font-size: clamp(0.65rem, 3vw, 1rem);
+}
+
+.change-language-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(4rem, 9vw, 5.5rem);
+  height: auto;
+  cursor: pointer;
+  z-index: 100;
+  background: transparent;
+}
+
+.change-language-btn img {
+  width: 100%;
+  height: auto;
+}
+
+.change-language-btn span {
+  font-size: clamp(0.50rem, 2vw, 1rem);
+  font-weight: 600;
+  color: var(--color-absolute-white) !important;
+  position: absolute;
+  text-shadow: 0 -2px 0 #333,
+  0 6px 155px rgba(0, 0, 0, .4),
+  0 9px 104px rgba(0, 0, 0, .15),
+  0 30px 50px rgba(0, 0, 0, .18),
+  0 15px 83px rgba(0, 0, 0, .21);
+}
+
+
+
+
+
+

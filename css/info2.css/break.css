@@ -1,0 +1,184 @@
+
+
+@media (max-width: 992px) {
+  * p {
+    text-align: justify;
+    hyphens: auto;
+    word-spacing: 0 !important;
+  }
+
+  .sidebar {
+    height: auto;
+    align-items: center;
+    padding: 150px 0 90px;
+  }
+
+  .sidebar h1,
+  .sidebar h2,
+  .sidebar p {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .sidebar h2 {
+    font-size: clamp(1.3rem, 5vw, 2.5rem);
+    margin-top: 1.5rem;
+  }
+
+  .sidebar p {
+    margin-top: 2rem;
+  }
+
+  .social-icons a {
+    margin-right: 0;
+  }
+
+  #about,
+  #experience,
+  #projects,
+  footer {
+    padding: 4rem 0 !important;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+
+  nav {
+    display: none !important;
+  }
+
+  #about-heading,
+  #experience-title,
+  #projects-title {
+    display: flex;
+    align-items: center;
+    color: var(--color-powder-blue) !important;
+    font-size: clamp(1.5rem, 3vw, 2rem) !important;
+    white-space: nowrap;
+  }
+
+  .line {
+    width: 100%;
+    margin: 0.5rem;
+    border-bottom: 1px solid var(--color-powder-blue);
+  }
+
+  #about-heading::after,
+  #experience-title::after,
+  #projects-title::after {
+    content: "";
+    width: 100%;
+    margin: 0.5rem;
+    border-bottom: 1px solid var(--color-powder-blue);
+    flex-grow: 1;
+  }
+
+  .content {
+    padding: 1rem 1.5rem!important;
+  }
+
+  .experience-section,
+  .projects-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    padding: 0;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer p {
+    max-width: 30rem !important;
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    margin: 0 !important;
+  }
+
+  .sidebar {
+    display: grid;
+    justify-content: center !important;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .experience-card-title {
+    flex-wrap: wrap;
+  }
+
+  .material-symbols-outlined {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .change-language-btn {
+    width: 3.3rem;
+  }
+
+  .header-container {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar {
+    gap: 0.7rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .header-container {
+    justify-content: right;
+  }
+
+  body.rtl .header-container {
+    justify-content: left;
+  }
+
+  .navbar {
+    display: none;
+  }
+}
+
+@media (min-width: 993px) {
+  #about,
+  #experience,
+  #projects,
+  footer {
+    padding: 6rem 0;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer p {
+    max-width: 28rem;
+    width: 100%;
+    padding: 0 4rem !important;
+    font-size: 1rem;
+  }
+
+  footer p {
+    padding: 0 !important;
+  }
+}
+
+  
