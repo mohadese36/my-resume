@@ -200,7 +200,7 @@
     /* work */
     .inner-work-conent {
         grid-template-columns: 1fr;
-        padding: 0;
+        padding: 0 !important;
     }
 
     .inner-work-content-btns button {

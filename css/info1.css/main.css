@@ -58,6 +58,10 @@ body.rtl h3 {
   font-weight: 1000 !important; 
 }
 
+button {
+  font-family: 'IRANSansWeb', sans-serif !important;
+  font-weight: 500 !important; 
+}
 
 html[lang="fa"] p {
   font-family: 'IRANSansWeb', sans-serif !important;

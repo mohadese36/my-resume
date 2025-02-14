@@ -5,6 +5,9 @@
     padding: 0 0.75rem;
     gap: 15px;
 }
+body.rtl .inner-work-conent{
+    padding-right: 1.5rem;
+}
 
 .inner-work-content-btns {
     display: grid;
