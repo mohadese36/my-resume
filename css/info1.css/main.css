@@ -59,7 +59,7 @@ body.rtl h3 {
 }
 
 body.rtl .info-container h3 {
-  font-size: 2.3rem !important;
+  font-size: clamp(1.3rem, 3vw, 2.3rem) !important;
 }
 
 button {
