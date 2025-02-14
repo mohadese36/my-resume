@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'IRANSansWeb';
+    src: url('IRANSansWeb.woff2') format('woff2'),
+        url('IRANSansWeb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANSansWeb';
+    src: url('IRANSansWeb-UltraLight.woff2') format('woff2'),
+        url('IRANSansWeb-UltraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANSansWeb';
+    src: url('IRANSansWeb-Light.woff2') format('woff2'),
+        url('IRANSansWeb-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANSansWeb';
+    src: url('IRANSansWeb-Medium.woff2') format('woff2'),
+        url('IRANSansWeb-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANSansWeb';
+    src: url('IRANSansWeb-Bold.woff2') format('woff2'),
+        url('IRANSansWeb-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANSansWeb';
+    src: url('IRANSansWeb-Black.woff2') format('woff2'),
+        url('IRANSansWeb-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
