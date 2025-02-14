@@ -134,6 +134,11 @@
   .header-container {
     padding: 1rem 2rem;
   }
+
+  footer {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
 }
 
 @media (max-width: 320px) {
