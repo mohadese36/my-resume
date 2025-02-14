@@ -12,11 +12,12 @@
 
 h2 span {
     color:  var(--color-soft-lavender);
-    margin-right: 1rem;
+    margin-right: 0.5rem;
 }
 
 body.rtl h2 span {
-    margin-left: 1rem;
+    margin-right: 0 !important;
+    margin-left: 0.5rem;
 }
 
 #about-title::after,
@@ -29,18 +30,7 @@ body.rtl h2 span {
    
 }
 
-/* h2 .line {
-    width: 4rem;
-    border-bottom: 1px solid  var(--color-frosted-glass) ;
-    margin-right: 4px;
-    display: inline-block;
-    text-align: center;
-    flex-grow: 1;
-} */
 
-/* body.rtl h2 .line {
-    margin-left: 4px ;
-} */
 
 /*  */
 
@@ -52,6 +42,10 @@ body.rtl h2 span {
 
 .about-container-content div {
     padding: 1rem;
+}
+
+body.rtl .about-container-content div {
+    padding: 1rem 0.5rem;
 }
 
 .about-container-content p {
@@ -120,29 +114,9 @@ body.rtl .about-container-content ul li::before {
     margin-right: 0;
 }
 
-h2 span {
-    color: var(--color-soft-lavender);
-    margin-right: 1vw;
-}
 
-body.rtl h2 span {
-    margin-left: 1vw;
-}
 
-/* h2 .line {
-    width: 4rem;
-    border-bottom: 1px solid var(--color-frosted-glass);
-    margin-right: 2px;
-    margin-left: 1vw;
-    display: inline-block;
-    text-align: center;
-    flex-grow: 1;
-} */
 
-/* body.rtl h2 .line {
-    margin-left: 2px;
-    margin-right: 1vw;
-} */
 
 .about-container-image-content img {
     width: 100%;

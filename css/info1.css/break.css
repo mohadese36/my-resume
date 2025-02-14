@@ -24,7 +24,8 @@
         margin-bottom: 1rem !important;
     }
     .services-container {
-        padding: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         margin: 0 auto;
     }
 
@@ -180,9 +181,9 @@
         grid-template-columns: auto;
     }
 
-    .contact-container {
+    /* .contact-container {
         padding: 1rem;
-    }
+    } */
     
     .contact-container p {
       
@@ -200,7 +201,11 @@
     /* work */
     .inner-work-conent {
         grid-template-columns: 1fr;
-        padding: 0 !important;
+        padding: 1rem;
+    }
+
+    body.rtl .inner-work-conent {
+        padding: 1rem 0.5rem;
     }
 
     .inner-work-content-btns button {
@@ -225,12 +230,12 @@
     }
 
     .inner-work-content-job-items {
-        margin-left: 1rem;
+        margin-left: 0.5rem;
     }
 
     body.rtl .inner-work-content-job-items {
         margin-left: 0;
-        margin-right: 1rem;
+        margin-right: 0.5rem;
     }
 
     .inner-work-content-jobs {

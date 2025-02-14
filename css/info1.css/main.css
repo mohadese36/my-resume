@@ -73,7 +73,7 @@ html[lang="fa"] p {
 .work-container {
     width: 70% !important;
     margin: 0 auto;
-    padding: 6rem 0 !important;
+    padding: 7rem 0 !important;
 }
 
 
@@ -123,8 +123,7 @@ a {
 }
 .about-container,
 .work-container,
-.info-container,
-.contact-container{
+.info-container{
     padding: 2rem 2rem 7rem;
     /* width: 100%; */
   
