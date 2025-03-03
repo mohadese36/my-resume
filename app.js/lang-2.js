@@ -1,3 +1,5 @@
+
+
 let currentLanguage = localStorage.getItem('lang') || 'en'; 
 
 
@@ -127,5 +129,3 @@ document.getElementById('change-language').addEventListener('click', function() 
       headTitle.innerHTML = 'اطلاعات رزومه من';
   }
 });
-
-
