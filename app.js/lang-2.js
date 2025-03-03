@@ -46,7 +46,7 @@ const loadLanguage = (lang) => {
 
 
       document.getElementById('about-heading').textContent = data.about.title;
-      document.getElementById('about-first-paragraph').textContent = data.about.firstParagraph;
+      document.getElementById('about-first-paragraph').innerHTML = data.about.firstParagraph;
       document.getElementById('about-second-paragraph').textContent = data.about.secondParagraph;
       document.getElementById('about-third-paragraph').textContent = data.about.thirdParagraph;
       document.getElementById('about-fourth-paragraph').textContent = data.about.fourthParagraph;
@@ -68,7 +68,7 @@ const loadLanguage = (lang) => {
           const subtitles = card.querySelectorAll('.experience-card-title p');
           if (subtitles.length > 0) subtitles[0].textContent = data.experience.cards[index].subtitle1;
           if (subtitles.length > 1) subtitles[1].textContent = data.experience.cards[index].subtitle2;
-          card.querySelector('p[id="card-description"]').textContent = data.experience.cards[index].description;
+          card.querySelector('p[id="card-description"]').innerHTML = data.experience.cards[index].description;
         }
       });
 
@@ -112,3 +112,20 @@ document.getElementById('change-language').addEventListener('click', () => {
 window.onload = function() {
   loadLanguage(currentLanguage);
 };
+
+
+////////////////title
+
+document.getElementById('change-language').addEventListener('click', function() {
+  const pageTitle = document.getElementById('page_title');
+  const headTitle = document.querySelector('head title');
+  const langButton = document.getElementById('change-language').querySelector('span');
+  
+  if (pageTitle.innerHTML === 'اطلاعات رزومه من') {
+      pageTitle.innerHTML = 'My Resume Information';
+      headTitle.innerHTML = 'My Resume Information';
+  } else {
+      pageTitle.innerHTML = 'اطلاعات رزومه من';
+      headTitle.innerHTML = 'اطلاعات رزومه من';
+  }
+});

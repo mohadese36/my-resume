@@ -1,19 +1,19 @@
 
     document.addEventListener("DOMContentLoaded", function () {
-      const sections = document.querySelectorAll("section"); // گرفتن تمام سکشن‌ها
-      const navLinks = document.querySelectorAll(".nav-link"); // لینک‌های منو
+      const sections = document.querySelectorAll("section"); 
+      const navLinks = document.querySelectorAll(".nav-link"); 
     
       function updateActiveLink() {
         let index = sections.length;
     
         while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
     
-        navLinks.forEach((link) => link.classList.remove("active")); // حذف کلاس از همه لینک‌ها
-        navLinks[index]?.classList.add("active"); // افزودن کلاس به لینک مرتبط
+        navLinks.forEach((link) => link.classList.remove("active")); 
+        navLinks[index]?.classList.add("active"); 
       }
     
       updateActiveLink();
-      window.addEventListener("scroll", updateActiveLink);
+        window.addEventListener("scroll", updateActiveLink);
     });
     
     
@@ -25,25 +25,22 @@
     const experienceCard = document.querySelectorAll('.experience-card');
     const projectBox = document.querySelectorAll('.project-box');
     
-    // اضافه کردن کلاس touch-hover هنگام لمس
     const addTouchHover = (element) => {
       element.classList.add('touch-hover');
     };
     
-    // حذف کلاس touch-hover هنگام برداشتن انگشت
     const removeTouchHover = (element) => {
       element.classList.remove('touch-hover');
     };
     
-    // برای شبیه‌سازی حالت hover در دستگاه‌های لمسی
     experienceCard.forEach(card => {
-      card.addEventListener('touchstart', () => addTouchHover(card)); // لمس برای شروع
-      card.addEventListener('touchend', () => removeTouchHover(card)); // لمس برای پایان
+      card.addEventListener('touchstart', () => addTouchHover(card)); 
+      card.addEventListener('touchend', () => removeTouchHover(card)); 
     });
     
     projectBox.forEach(box => {
-      box.addEventListener('touchstart', () => addTouchHover(box)); // لمس برای شروع
-      box.addEventListener('touchend', () => removeTouchHover(box)); // لمس برای پایان
+      box.addEventListener('touchstart', () => addTouchHover(box)); 
+      box.addEventListener('touchend', () => removeTouchHover(box));
     });
     
 
@@ -67,23 +64,24 @@
   ];
   
   document.addEventListener("mousemove", (e) => {
-      let trail = document.createElement("div");
-      trail.classList.add("trail");
-      document.body.appendChild(trail);
-  
-      let randomColor = colors[Math.floor(Math.random() * colors.length)];
-      trail.style.background = randomColor;
-      trail.style.filter = `drop-shadow(0 0 10px ${randomColor})`;
-  
-      trail.style.left = `${e.pageX}px`;
-      trail.style.top = `${e.pageY}px`;
-  
-      setTimeout(() => {
-          trail.style.transform = "scale(2)";
-          trail.style.opacity = "0";
-      }, 10);
-  
-      setTimeout(() => {
-          trail.remove();
-      }, 500);
+    let trail = document.createElement("div");
+    trail.classList.add("trail");
+    document.body.appendChild(trail);
+
+    let randomColor = colors[Math.floor(Math.random() * colors.length)];
+    trail.style.background = randomColor;
+    trail.style.filter = `drop-shadow(0 0 10px ${randomColor})`;
+
+    trail.style.left = `${e.pageX}px`;
+    trail.style.top = `${e.pageY}px`;
+
+    setTimeout(() => {
+      trail.style.transform = "scale(2)";
+      trail.style.opacity = "0";
+    }, 10);
+
+    setTimeout(() => {
+      trail.remove();
+    }, 500);
+
   });

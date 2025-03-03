@@ -1,4 +1,3 @@
-
 let currentLanguage = localStorage.getItem('lang') || 'en';
 const changeLanguageButton = document.getElementById('change-language');
 
@@ -6,8 +5,6 @@ defineLanguageAttributes(currentLanguage);
 
 document.addEventListener('DOMContentLoaded', () => loadLanguage(currentLanguage));
 changeLanguageButton.addEventListener('click', toggleLanguage);
-
-
 
 function defineLanguageAttributes(lang) {
     document.documentElement.setAttribute('lang', lang);
@@ -39,18 +36,19 @@ function loadLanguage(lang) {
                 "#description": data.infoSection.description,
                 "#projects-btn": data.infoSection.projectsButton,
                 "#nextjs-link": 'Next.js',
-                "#about-title": `<span>◆</span> ${data.aboutSection.title} <span class="line"></span>`,
+                "#about-title": `<span>◆</span> ${data.aboutSection.title}`,
                 "#about-text-1": data.aboutSection.text1,
                 "#about-text-2": data.aboutSection.text2,
                 "#about-text-3": data.aboutSection.text3,
                 "#about-text-4": data.aboutSection.text4,
-                "#work-title": `<span>◆</span> ${data.work.title} <span class="line"></span>`,
+                "#work-title": `<span>◆</span> ${data.work.title}`,
                 "#services-title": data.services.title,
                 "#contact-title": data.contact.title,
                 "#contact-description-1": data.contact.description1,
                 "#contact-description-2": data.contact.description2,
                 "#contact-link": data.contact.link,
                 "#closeButton": data.header.menuContainer.closeButton,
+                "#page-title": data.pageTitle,
 
                 "#btn-web-development": data.work.buttons.webDevelopment,
                 "#btn-freelance-work": data.work.buttons.freelanceWork,
@@ -66,7 +64,6 @@ function loadLanguage(lang) {
         })
         .catch(error => console.error('Error loading language:', error));
 }
-
 
 function updateTextContent(elements) {
     for (const [selector, text] of Object.entries(elements)) {
@@ -105,19 +102,3 @@ function updateServiceSections(services) {
         });
     });
 }
-
-///////////////////title
-
-document.getElementById('change-language').addEventListener('click', function() {
-    const pageTitle = document.getElementById('page_title');
-    const headTitle = document.querySelector('head title');
-    const langButton = document.getElementById('change-language').querySelector('span');
-    
-    if (pageTitle.innerHTML === 'رزومه من') {
-        pageTitle.innerHTML = 'My Resume';
-        headTitle.innerHTML = 'My Resume';
-    } else {
-        pageTitle.innerHTML = 'رزومه من';
-        headTitle.innerHTML = 'رزومه من';
-    }
-  });

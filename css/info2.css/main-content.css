@@ -25,6 +25,11 @@
   margin-bottom: 1rem;
 }
 
+.main-content p span {
+  color: var(--color-spring-teal);
+  font-weight: 500;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }

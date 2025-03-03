@@ -21,7 +21,7 @@
     .work-container h2,
     .services-container,
     .services-wrapper-head {
-        margin-bottom: 1rem !important;
+        margin-bottom: 0.5rem !important;
     }
     .services-container {
         padding-left: 2rem;

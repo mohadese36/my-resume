@@ -1,11 +1,11 @@
 
 
 @media (max-width: 992px) {
-  * p {
+  /* * p {
     text-align: justify;
     hyphens: auto;
     word-spacing: 0 !important;
-  }
+  } */
 
   .sidebar {
     height: auto;
