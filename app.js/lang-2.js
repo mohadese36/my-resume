@@ -132,15 +132,7 @@ document.getElementById('change-language').addEventListener('click', function() 
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  const lang = new URLSearchParams(window.location.search).get("lang") || "en";
 
-  document.querySelectorAll('a[data-article]').forEach(link => {
-      const currentHref = new URL(link.href);
-      currentHref.searchParams.set("lang", lang);
-      link.href = currentHref.toString();
-  });
-});
 
 
 

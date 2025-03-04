@@ -91,7 +91,7 @@
                   <h2 id="experience-title">Experience</h2>          
                   <div class="experience-section">
               
-                    <a href="https://enchanting-pithivier-4e898f.netlify.app/article6" data-article>
+                    <a href="https://enchanting-pithivier-4e898f.netlify.app/article6" class="article-link">
                       <div class="experience-card">
                         <h3 id="card-frontend-title">
                             <span class="material-symbols-outlined arrow">arrow_outward</span>  
@@ -117,7 +117,7 @@
                     </div>
                     </a>
                     
-                    <a href="https://grand-sopapillas-fc5090.netlify.app/article2" data-article>
+                    <a href="https://grand-sopapillas-fc5090.netlify.app/article2" class="article-link">
                       <div class="experience-card">
                         <h3 id="card-frontend-title">
                           <span class="material-symbols-outlined arrow">arrow_outward</span>
@@ -151,7 +151,7 @@
                       </div>
                     </a>
               
-                    <a href="https://grand-sopapillas-fc5090.netlify.app/article3" data-article>
+                    <a href="https://grand-sopapillas-fc5090.netlify.app/article3" class="article-link">
                       <div class="experience-card">
                         <h3 id="card-frontend-title">
                           <span class="material-symbols-outlined arrow">arrow_outward</span>
@@ -176,7 +176,7 @@
                       </div>
                     </a>
 
-                    <a href="https://grand-sopapillas-fc5090.netlify.app/article4" data-article>
+                    <a href="https://grand-sopapillas-fc5090.netlify.app/article4" class="article-link">
                       <div class="experience-card">
                         <h3 id="card-frontend-title">
                           <span class="material-symbols-outlined arrow">arrow_outward</span>
@@ -198,7 +198,7 @@
                       </div>
                     </a>
 
-                    <a href="https://enchanting-pithivier-4e898f.netlify.app/article5" data-article>
+                    <a href="https://enchanting-pithivier-4e898f.netlify.app/article5" class="article-link">
                       <div class="experience-card">
                         <h3 id="card-frontend-title">
                           <span class="material-symbols-outlined arrow">arrow_outward</span>
@@ -229,7 +229,7 @@
                       </div>
                     </a>
                     
-                    <a href="https://enchanting-pithivier-4e898f.netlify.app/" data-article>
+                    <a href="https://enchanting-pithivier-4e898f.netlify.app/" class="article-link">
                       <div class="experience-card">
                         <h3 id="card-frontend-title">
                             <span class="material-symbols-outlined arrow">arrow_outward</span>
@@ -270,7 +270,7 @@
                     </a>
 
                   <div class="view-resume" id="view-resume">
-                      <a href="https://enchanting-pithivier-4e898f.netlify.app/" class="resume-link" id="resume-link" data-article>
+                      <a href="https://enchanting-pithivier-4e898f.netlify.app/" class="resume-link article-link" id="resume-link">
                         View Full Résumé <span class="material-symbols-outlined arrow">arrow_outward</span>
                       </a>
                   </div>
@@ -361,6 +361,21 @@
     
     <script src="app.js/info-2.js"></script>
     <script src="app.js/lang-2.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const currentLang = urlParams.get("lang") || "en"; // اگر مقدار lang وجود نداشت، پیش‌فرض انگلیسی باشد
+
+    // همه لینک‌های مقالات را بررسی کن و مقدار lang را اضافه کن
+    document.querySelectorAll("a.article-link").forEach(link => {
+        const url = new URL(link.href);
+        url.searchParams.set("lang", currentLang); // زبان فعلی را اضافه کن
+        link.href = url.toString();
+    });
+});
+
+    </script>
 
   </body>
 </html>
