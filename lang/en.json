@@ -115,18 +115,20 @@
   "infoSection": {
     "introText": "Hi, my name is",
     "name": "Mohadese Jokar",
-    "jobTitle": "Turning Challenges <br> into Web Solutions",
-    "description": "I’m a front-end developer specializing in building interactive web experiences. <br> Currently, I’m working with React and exploring the capabilities of <a href='' id='nextjs-link'>Next.js</a>",
-    "projectsButton": "Check out my projects!"
+    "jobTitle": "Web Interactive Experience Developer",
+    "description": "I am a front-end developer passionate about creating unique and interactive experiences in the web world. <br> Currently, I am building engaging and innovative projects with React, and I am exploring the powerful capabilities of <a href='' id='nextjs-link'>Next.js</a>.",
+    "projectsButton": "Achievements & Projects"
+    
   },      
   "aboutSection": {
     "id": "about",
     "title": "About Me",
     "titleSymbol": "◆",
-    "text1": "Hello! My name is MOHADESE, and I enjoy creating things for the web. My journey into web development started in 2020 when I decided to edit custom Tumblr themes. What seemed like a small project turned into an amazing learning experience and taught me a lot about HTML and CSS.",
-    "text2": "Since then, I’ve focused on building interactive, user-friendly web applications and have continuously improved my skills in technologies like React and Next.js. Besides personal projects, I also have freelance experience, having worked as a web developer on various projects. This opportunity has allowed me to strengthen my problem-solving skills and expand my knowledge of modern web development.",
-    "text3": "Currently, I’m diving deeper into React, exploring Next.js, learning TypeScript, and staying updated on the latest trends in front-end development.",
-    "text4": "Here are a few technologies I’ve been working with recently:",
+    "text1": "I enjoy building things for the web. My journey in web development started in 2020 when I decided to edit custom Tumblr themes. What seemed like a small project turned into an amazing learning experience, teaching me a lot about <strong>HTML</strong> and <strong>CSS</strong>.",
+    "text2": "Since then, I have focused on building interactive and user-friendly web applications, continuously improving my skills in technologies like <strong>React</strong> and <strong>Next.js</strong>. In addition to personal projects, I also have freelance experience and have worked as a web developer on various projects. This opportunity has helped me strengthen my problem-solving skills and expand my knowledge in modern web development.",
+    "text3": "Currently, I am diving deeper into <strong>React</strong>, <strong>Next.js</strong>, learning <strong>TypeScript</strong>, and staying updated with the latest trends in front-end development.",
+    "text4": "Here are some technologies I have recently worked with:",
+
     "techList": [
       "JavaScript (ES6+)",
       "React",
@@ -318,10 +320,14 @@
   },         
   "contact": {
     "id": "contact",
-    "title": "Get In Touch",
-    "description1": "If you have a project idea, need a front-end developer, or just want to discuss web development,",
-    "description2": "I’d love to hear from you! Feel free to reach out via email and let's make something amazing together.",
-    "link": "Say Hello"
+    "title": "Contact Me",
+    "description1": "If you're looking to start a new project or share a creative idea,",
+    "description2": "I'm ready to help you turn your ideas into reality. Reach out via email to start collaborating.",
+
+    "link": "get in touch",
+    "email": {
+      "en": "https://mail.google.com/mail/?view=cm&to=ariagh3936@gmail.com&su=Collaboration%20Opportunity&body=If%20you%20have%20an%20idea%20for%20a%20project,%20need%20a%20frontend%20developer,%20or%20just%20want%20to%20talk%20about%20web%20development,%0A%0AI%27d%20love%20to%20hear%20from%20you!%20Feel%20free%20to%20reach%20out%20via%20email%20and%20let%27s%20make%20something%20amazing%20together."
+    }
   }
               
             

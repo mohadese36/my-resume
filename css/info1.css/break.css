@@ -278,6 +278,12 @@
     body.rtl .row:first-of-type .column:nth-of-type(1) {
         border: none;
     }
+
+    .about-container,
+    .info-container,
+    .work-container {
+    padding: 3rem 0 !important;
+  }
 }
 
 @media (max-width: 576px) {

@@ -61,8 +61,10 @@
 
 
 html {
-  scroll-behavior: smooth;
+  scroll-padding-top: 100px; 
+  scroll-behavior: smooth; 
 }
+
 
 
 html[lang="fa"] {

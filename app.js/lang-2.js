@@ -132,6 +132,16 @@ document.getElementById('change-language').addEventListener('click', function() 
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const currentLang = urlParams.get("lang") || localStorage.getItem("selectedLanguage") || "en"; // گرفتن زبان از URL یا localStorage
+
+  document.querySelectorAll("a.article-link").forEach(link => {
+      const url = new URL(link.href);
+      url.searchParams.set("lang", currentLang); // اضافه کردن زبان فعلی به لینک
+      link.href = url.toString();
+  });
+});
 
 
 

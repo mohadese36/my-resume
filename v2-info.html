@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 
   <head>
     <meta charset="UTF-8">
@@ -117,7 +117,7 @@
                     </div>
                     </a>
                     
-                    <a href="https://grand-sopapillas-fc5090.netlify.app/article2" class="article-link">
+                    <a href="https://enchanting-pithivier-4e898f.netlify.app/article2" class="article-link">
                       <div class="experience-card">
                         <h3 id="card-frontend-title">
                           <span class="material-symbols-outlined arrow">arrow_outward</span>
@@ -151,7 +151,7 @@
                       </div>
                     </a>
               
-                    <a href="https://grand-sopapillas-fc5090.netlify.app/article3" class="article-link">
+                    <a href="https://enchanting-pithivier-4e898f.netlify.app/article3" class="article-link">
                       <div class="experience-card">
                         <h3 id="card-frontend-title">
                           <span class="material-symbols-outlined arrow">arrow_outward</span>
@@ -176,7 +176,7 @@
                       </div>
                     </a>
 
-                    <a href="https://grand-sopapillas-fc5090.netlify.app/article4" class="article-link">
+                    <a href="https://enchanting-pithivier-4e898f.netlify.app/article4" class="article-link">
                       <div class="experience-card">
                         <h3 id="card-frontend-title">
                           <span class="material-symbols-outlined arrow">arrow_outward</span>
@@ -363,18 +363,17 @@
     <script src="app.js/lang-2.js"></script>
 
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const currentLang = urlParams.get("lang") || "en"; // اگر مقدار lang وجود نداشت، پیش‌فرض انگلیسی باشد
-
-    // همه لینک‌های مقالات را بررسی کن و مقدار lang را اضافه کن
-    document.querySelectorAll("a.article-link").forEach(link => {
-        const url = new URL(link.href);
-        url.searchParams.set("lang", currentLang); // زبان فعلی را اضافه کن
-        link.href = url.toString();
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a').forEach(function(anchor) {
+        anchor.addEventListener('click', function(event) {
+            event.preventDefault();
+            let currentLang = document.documentElement.lang || 'en';
+            let targetUrl = new URL(anchor.href);
+            targetUrl.searchParams.set('lang', currentLang);
+            window.location.href = targetUrl.toString();
+        });
     });
 });
-
     </script>
 
   </body>

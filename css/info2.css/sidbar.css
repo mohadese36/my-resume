@@ -137,10 +137,10 @@ body.rtl .nav-link.active span {
   color: var(--color-dusty-blue);
   text-decoration: none;
   font-size: 1.5rem;
-  margin-right: 1.25rem;
+  margin-right: 0.75rem;
   transition: color 0.3s ease;
 }
 body.rtl .social-icons a {
   margin-right: 0;
-  margin-left: 1.25rem;
+  margin-left: 0.75rem;
 }
