@@ -24,9 +24,11 @@
         margin-bottom: 0.5rem !important;
     }
     .services-container {
-        padding-left: 2rem;
-        padding-right: 2rem;
         margin: 0 auto;
+        padding: 2rem;
+    }
+    .contact-container {
+        padding: 3rem  2rem;
     }
 
     .social-icons {
