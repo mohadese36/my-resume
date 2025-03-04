@@ -129,3 +129,51 @@ document.getElementById('change-language').addEventListener('click', function() 
       headTitle.innerHTML = 'اطلاعات رزومه من';
   }
 });
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  let lang = getCurrentLanguage();
+
+  // اگر زبان در URL نیست، زبان پیش‌فرض را تنظیم کرده و به URL اضافه کنید
+  if (!urlParams.has('lang')) {
+      lang = navigator.language.startsWith('fa') ? 'fa' : 'en';
+      urlParams.set('lang', lang);
+      window.history.replaceState({}, '', `${window.location.pathname}?${urlParams}`);
+  }
+
+  setLanguage(lang);
+
+  // تغییر زبان از طریق دکمه
+  const languageSwitcher = document.getElementById('change-language2');
+  if (languageSwitcher) {
+      const languageSwitcherButton = languageSwitcher.querySelector('button');
+      if (languageSwitcherButton) {
+          languageSwitcherButton.textContent = lang === 'fa' ? 'English' : 'Persian';
+
+          languageSwitcher.addEventListener('click', () => {
+              const newLang = lang === 'fa' ? 'en' : 'fa';
+              urlParams.set('lang', newLang);
+              window.location.href = `${window.location.pathname}?${urlParams}`; // اینجا href را به روز کنید
+          });
+      }
+  }
+
+  // اضافه کردن پارامتر زبان به همه لینک‌ها هنگام کلیک
+  document.querySelectorAll('a').forEach(link => {
+      const url = new URL(link.href, window.location.origin);
+      if (!url.searchParams.has('lang')) {
+          url.searchParams.set('lang', lang);
+          link.href = url.toString(); // اضافه کردن پارامتر lang به لینک‌ها
+      }
+  });
+
+  // تغییر زبان از طریق دکمه جدید (language-toggle-btn)
+  document.getElementById('language-toggle-btn').addEventListener('click', function() {
+      const currentLang = new URLSearchParams(window.location.search).get('lang');
+      const newLang = currentLang === 'fa' ? 'en' : 'fa'; // تغییر زبان از فارسی به انگلیسی یا بالعکس
+      window.location.href = window.location.pathname + '?lang=' + newLang;
+  });
+});
+
