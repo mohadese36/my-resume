@@ -282,9 +282,12 @@
     }
 
     .about-container,
-    .info-container,
-    .work-container {
+    .info-container {
     padding: 3rem 0 !important;
+  }
+
+  .work-container {
+    padding: 3rem 0 2rem !important;
   }
 }
 
