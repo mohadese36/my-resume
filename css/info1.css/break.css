@@ -182,10 +182,24 @@
     .about-container-content {
         grid-template-columns: auto;
     }
+    /* about */
+    .about-container-content {
+        grid-template-columns: 1fr;
+    }
 
-    /* .contact-container {
-        padding: 1rem;
-    } */
+    .about-container-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-container-image-content {
+        order: -1; 
+    }
+
+    #about-image {
+        width: min(60vw, 300px);
+        height: min(60vw, 300px);
+    }
+
     
     .contact-container p {
       

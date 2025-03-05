@@ -52,6 +52,7 @@ html {
 body {
   font-family: 'Roboto', 'IRANSansWeb', sans-serif;
   background:  var(--color-deep-ocean);
+  line-height: 1.6 !important;
 }
 
 body.rtl h1,

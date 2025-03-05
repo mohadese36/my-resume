@@ -41,7 +41,7 @@
 
 strong {
   color: var(--color-spring-teal) !important;
-  font-weight: bold;
+  font-weight: 200;
 }
 
 .project-stats span {
